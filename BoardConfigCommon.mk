@@ -1,4 +1,5 @@
 # Copyright (C) 2010 The Android Open Source Project
+# Copyright (C) 2013 The XPerience Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -88,6 +89,9 @@ BOARD_USES_GROUPER_MODULES := true
 
 # Required for CWM
 BOARD_HAS_NO_SELECT_BUTTON := true
+BOARD_RECOVERY_SWIPE := true
 
 TARGET_KERNEL_SOURCE := kernel/asus/grouper
-TARGET_KERNEL_CONFIG := cyanogenmod_grouper_defconfig
+TARGET_KERNEL_CONFIG := XPerience_grouper_defconfig
+
+TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
