@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2010 The Android Open Source Project
+# Copyright (C) 2013 The XPerience Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -73,6 +74,7 @@ PRODUCT_PACKAGES := \
     power.grouper \
     audio.a2dp.default \
     audio.usb.default \
+    audio.r_submix.default \
     librs_jni \
     setup_fs \
     l2ping \
@@ -102,10 +104,6 @@ PRODUCT_COPY_FILES += \
 # media codec config xml file
 PRODUCT_COPY_FILES += \
     device/asus/grouper/media_codecs.xml:system/etc/media_codecs.xml
-
-# Bluetooth config file
-PRODUCT_COPY_FILES += \
-    system/bluetooth/data/main.nonsmartphone.conf:system/etc/bluetooth/main.conf \
 
 # audio mixer paths
 PRODUCT_COPY_FILES += \
